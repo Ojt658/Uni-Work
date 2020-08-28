@@ -1,0 +1,317 @@
+/* Application's Dark Mode Style Sheet */
+
+/* Text Styling */
+
+/* .root applies a global text size of 11 */
+.root {
+    -fx-font-size: 11pt; /* Text Size */
+}
+
+/* Color of the text to be viewable in dark mode */
+#text-color {
+    -fx-text-fill: #c9c9c9 ; /* White Text Color */
+}
+
+/* Window Styling */
+
+/* 1 out of the 2 section's of the program's background color */
+#top-theme {
+    -fx-background-color: #304E51; /* Background Dark Teal Color  */
+}
+
+/* 1 out of the 2 section's of the program's background color */
+#background-theme {
+    -fx-background-color: #2a2a2e; /* Background Black Color*/
+}
+
+/* Background color for user test three that sits behind the selection buttons in Dark mode*/
+#background-userTestThree {
+    -fx-background-color: #3c3f41;
+}
+
+/* Changes the look of the dictionary and practice lists depending for Dark mode */
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#263e40 0%, #2b4648 100%);
+    -fx-text-fill: #c9c9c9;
+}
+
+.list-cell:even {
+    -fx-background-color: #2a2a2e;
+    -fx-text-fill: #c9c9c9;
+}
+
+.list-cell:odd {
+    -fx-background-color: #3f3f42;
+    -fx-text-fill: #c9c9c9;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #304E51;
+    -fx-text-fill: #c9c9c9;
+}
+
+/* Change all user input text fields (e.g. search bar) to a Dark mode version */
+.text-input {
+    -fx-background-color: #DCDCDC; /* Background Dark Teal Color  */
+    -fx-text-fill: #2B2B2B; /* Black Text Color */
+}
+
+/* Default size for the 'adding a word' popup box */
+.add-word-box {
+    -fx-min-width: 250px;
+    -fx-min-height: 200px;
+}
+
+/* Buttons */
+
+/* Default style for the button */
+#buttons {
+    -fx-wrap-text: true; /* Allows text to be viewable when squashed */
+    -fx-text-alignment: center;
+    -fx-background-color: #66c5cd; /* Teal Color */
+}
+
+/* Styling for generic buttons when mouse cursor is hovered over it */
+#buttons:hover {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+}
+
+/* Styling to when a button containing the correct answer is clicked in the user tests */
+#button-selected {
+    -fx-background-color: #66c5cd; /* Teal Color */
+    /* Thin solid red border around the button */
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-color: #8B0000; /* Dark red color */
+}
+
+/* White box dedicated to the button to change the application to the light theme */
+#light-button {
+    -fx-background-color: #FFFFFF; /* White Color */
+}
+
+/* Shows when mouse cursor is hovered over the button for changing to light theme */
+#light-button:hover {
+    -fx-background-color: #cccccc; /* Light Grey Color */
+}
+
+/* Places a red border around the Light theme button when selected */
+#light-button-selected {
+    -fx-background-color: #FFFFFF; /* White Color */
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-color: #FF0000; /* Red color */
+}
+
+/* Black box dedicated to the button to change the application to the dark theme */
+#dark-button {
+    -fx-background-color: #000000; /* Black Color */
+}
+
+/* Shows when mouse cursor is hovered over the button for changing to dark theme */
+#dark-button:hover {
+    -fx-background-color: #2B2B2B; /* Dark Grey Color */
+}
+
+/* Places a red border around the Dark theme button when selected */
+#dark-button-selected {
+    -fx-background-color: #000000; /* Black Color */
+    -fx-border-style: solid;
+    -fx-border-width: 3px;
+    -fx-border-color: #FF0000; /* Red color */
+}
+
+/* Applies a Welsh flag pointing to a English Flag Image and styling to it's dedicated button in Dark mode */
+#button-welsh-to-english {
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/WelshToEnglish.png); /* Welsh to English button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the change Welsh to English button in Dark mode */
+#button-welsh-to-english:hover {
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/WelshToEnglish.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+
+}
+
+/* Applies an English flag pointing to a Welsh Flag Image and styling to it's dedicated button in Dark mode */
+#button-english-to-welsh {
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/EnglishToWelsh.png); /* English to Welsh button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the change English to Welsh button in Dark mode */
+#button-english-to-welsh:hover {
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/EnglishToWelsh.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+}
+
+/* Styles the Home window button with a House in Dark mode */
+#button-dictionary {
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/HomeButton.png); /* Home Icon button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the Home window button in Dark mode */
+#button-dictionary:hover {
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/HomeButton.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styles the Settings window button with a Cog in Dark mode */
+#button-settings {
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/SettingsButton.png); /* Settings Cog button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the Settings window button in Dark mode */
+#button-settings:hover {
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/SettingsButton.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styles the button which loads UserTestOne within TestYourself in Dark mode */
+#button-multiple-choice {
+    -fx-wrap-text: true; /* Allows text to be viewable when squashed */
+    -fx-text-alignment: center;
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/MultipleChoice.png); /* UserTestOne button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the UserTestOne button in Dark mode */
+#button-multiple-choice:hover {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/MultipleChoice.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styles the button which loads UserTestTwo within TestYourself in Dark mode */
+#button-typing-translation {
+    -fx-wrap-text: true; /* Allows text to be viewable when squashed */
+    -fx-text-alignment: center;
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/TypingTranslation.png); /* UserTestTwo button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: bottom;
+}
+
+/* Styling to indicate when mouse cursor is over the UserTestTwo button in Dark mode */
+#button-typing-translation:hover {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/TypingTranslation.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: bottom;
+}
+
+/* Styles the button which loads UserTestThree within TestYourself in Dark mode */
+#button-matching-words {
+    -fx-wrap-text: true; /* Allows text to be viewable when squashed */
+    -fx-text-alignment: center;
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/MatchingWords.png); /* UserTestThree button image within resources */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the UserTestThree button in Dark mode */
+#button-matching-words:hover {
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/MatchingWords.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Used for enforcing a similar button size in main navigation buttons in Dark mode */
+#button-empty-box {
+    -fx-background-color: #66c5cd; /* Teal Color */
+    -fx-background-image: url(../resources/images/Empty.png); /* Loads a transparent image the same size as the english to welsh image */
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Styling to indicate when mouse cursor is over the button in Dark mode */
+#button-empty-box:hover {
+    -fx-background-color: #6ca1a6; /* Dark Teal Color */
+    -fx-background-image: url(../resources/images/Empty.png);
+    -fx-background-size: 100px 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+/* Buttons within UserTestThree */
+
+/*  This applies the same styling to the first two buttons the user clicks on */
+#matchbutton-one {
+    -fx-background-color: #CD5C5C; /* Indian Red color*/
+}
+
+/*  This applies the same styling to the third and fourth buttons the user clicks on */
+#matchbutton-two {
+    -fx-background-color: #FFFACD; /* Lemon chiffon color */
+}
+
+/*  This applies the same styling to the fifth and six buttons the user clicks on */
+#matchbutton-three {
+    -fx-background-color: #87CEFA; /* Light sky blue color */
+}
+
+/*  This applies the same styling to the seventh and eighth buttons the user clicks on */
+#matchbutton-four {
+    -fx-background-color: #FF7F50; /* Coral color */
+}
