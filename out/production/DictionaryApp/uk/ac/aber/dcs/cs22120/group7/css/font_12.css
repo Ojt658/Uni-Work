@@ -1,0 +1,14 @@
+/*
+ * This CSS file is used to change the global text size of the program to a size of 12
+ */
+
+/* Overrides the .root method from the AppStyleSheetDark/Light Style sheets */
+.root {
+    -fx-font-size: 12pt; /* Text Size */
+}
+
+/* Overridden scaled size for the 'adding a word' popup box when the font size is 12 */
+.add-word-box {
+    -fx-min-width: 280px;
+    -fx-min-height: 220px;
+}
